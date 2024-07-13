@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+main {
+    max-width: 900px;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.title {
+    font-size: 24px;
+    color: green;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    align-items: flex-start; /* Aligne le texte au début de l'image */
+    gap: 20px; /* Espace entre l'image et le texte */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+}
+
+figure {
+    margin: 0;
+    flex-shrink: 0; /* Empêche l'image de rétrécir */
+}
+
+img {
+    max-width: 100%; /* L'image prend la largeur disponible */
+    height: auto; /* Maintient les proportions de l'image */
+    border-radius: 8px;
+}
+
+figcaption {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+}
+
+.text-container {
+    flex: 1; /* Permet au texte de prendre l'espace restant */
+}
+
+.paraph-1 {
+    margin-bottom: 10px;
+}
+
+.paraph-2 {
+    margin-top: 10px;
+}
+
+.paraph-2 a {
+    color: blue;
+    text-decoration: none;
+}
+
+.paraph-2 a:hover {
+    text-decoration: underline;
+}
+
+.title-2 {
+    font-size: 20px;
+    color: darkblue;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+ul {
+    list-style-type: disc; /* Affiche des puces devant les éléments de liste */
+    padding-left: 20px; /* Espace à gauche pour les puces */
+    margin-bottom: 30px; /* Espace en bas de la liste */
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+/* Styles des liens dans la liste */
+ul li a {
+    color: blue; /* Couleur des liens */
+    text-decoration: none; /* Supprime le soulignement des liens */
+}
+
+/* Styles des liens au survol */
+ul li a:hover {
+    text-decoration: underline; /* Ajoute un soulignement au survol des liens */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f4f4f4;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
