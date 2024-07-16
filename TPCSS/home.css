@@ -13,15 +13,16 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    padding: 20px; 
 }
 
 main {
-    max-width: 900px;
     width: 100%;
+    max-width: 800px;
     background-color: #fff;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .title {
@@ -35,21 +36,19 @@ main {
     display: flex;
     align-items: flex-start; /* Aligne le texte au début de l'image */
     gap: 20px; /* Espace entre l'image et le texte */
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
     width: 100%;
+    max-width: 800px;
+    flex-wrap: nowrap;
 }
 
 figure {
     margin: 0;
     flex-shrink: 0; /* Empêche l'image de rétrécir */
+    max-width: 60%;
 }
 
 img {
-    max-width: 100%; /* L'image prend la largeur disponible */
+    width: 100%;
     height: auto; /* Maintient les proportions de l'image */
     border-radius: 8px;
 }
@@ -83,7 +82,7 @@ figcaption {
 
 .title-2 {
     font-size: 20px;
-    color: darkblue;
+    color: purple;
     margin-bottom: 15px;
     text-align: left;
 }
@@ -126,6 +125,7 @@ table th, table td {
 
 table th {
     background-color: #f4f4f4;
+    color: red;
 }
 
 table tr:nth-child(even) {
