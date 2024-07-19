@@ -131,3 +131,7 @@ table th {
 table tr:nth-child(even) {
     background-color: #f9f9f9;
 }
+
+.highlight {
+    color: red; /* Texte en rouge */
+}
