@@ -4,52 +4,63 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
-    line-height: 1.6;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    padding: 20px; 
+/* Styles spécifiques pour la section hero */
+.hero {
+    text-align: center;
+    background-color: #007bff;
+    color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    text-align: center;
 }
 
-main {
-    width: 100%;
-    max-width: 800px;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.hero h2 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+/* Styles spécifiques pour la section content */
+.content {
+    display: flex;
+    flex-direction: column; /* Aligne les éléments en colonne */
+    align-items: left; /* Centre les éléments horizontalement */
+    text-align: center; /* Centre le texte dans le conteneur */
+    border: 2px solid #ddd; /* Bordure autour de la section */
+    border-radius: 8px; /* Coins arrondis */
+    padding: 20px; /* Espacement intérieur */
+    margin: 20px auto; /* Espacement extérieur */
+    max-width: 800px; /* Largeur maximale */
+    background-color: #fff; /* Fond blanc pour la section */
 }
 
 .title {
     font-size: 24px;
-    color: green;
+    color: green; /* Titre en vert */
     margin-bottom: 20px;
-    text-align: center;
 }
 
+/* Styles spécifiques pour le contenu de l'exercice */
 .container {
     display: flex;
-    align-items: flex-start; /* Aligne le texte au début de l'image */
     gap: 20px; /* Espace entre l'image et le texte */
     width: 100%;
-    max-width: 800px;
-    flex-wrap: nowrap;
+    max-width: 100%;
+
 }
 
 figure {
     margin: 0;
-    flex-shrink: 0; /* Empêche l'image de rétrécir */
     max-width: 60%;
 }
 
 img {
     width: 100%;
-    height: auto; /* Maintient les proportions de l'image */
+    height: auto;
     border-radius: 8px;
 }
 
@@ -60,15 +71,16 @@ figcaption {
 }
 
 .text-container {
-    flex: 1; /* Permet au texte de prendre l'espace restant */
+    flex: 40%; /* Les paragraphes prennent 40% de la largeur */
+    text-align: left; /* Alignement du texte à gauche */
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
 }
 
-.paraph-1 {
-    margin-bottom: 10px;
-}
-
+.paraph-1,
 .paraph-2 {
-    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .paraph-2 a {
@@ -85,12 +97,14 @@ figcaption {
     color: purple;
     margin-bottom: 15px;
     text-align: left;
+    margin-top: 20px;
 }
 
 ul {
-    list-style-type: disc; /* Affiche des puces devant les éléments de liste */
-    padding-left: 20px; /* Espace à gauche pour les puces */
-    margin-bottom: 30px; /* Espace en bas de la liste */
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 30px;
+    text-align-last: left;
 }
 
 ul li {
@@ -101,15 +115,13 @@ ul li {
     font-weight: bold;
 }
 
-/* Styles des liens dans la liste */
 ul li a {
-    color: blue; /* Couleur des liens */
-    text-decoration: none; /* Supprime le soulignement des liens */
+    color: blue;
+    text-decoration: none;
 }
 
-/* Styles des liens au survol */
 ul li a:hover {
-    text-decoration: underline; /* Ajoute un soulignement au survol des liens */
+    text-decoration: underline;
 }
 
 table {
@@ -133,5 +145,24 @@ table tr:nth-child(even) {
 }
 
 .highlight {
-    color: red; /* Texte en rouge */
+    color: red;
+}
+
+/* Style pour le bouton de retour */
+.button {
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px; /* Espacement au-dessus du bouton */
+    text-align: center;
+    text-align: center;
+    margin: 20px auto; /* Centrage du bouton avec un espace au-dessus */
+}
+
+.button:hover {
+    background-color: #555;
 }
