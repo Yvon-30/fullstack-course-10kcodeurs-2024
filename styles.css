@@ -39,6 +39,11 @@ header nav ul li a:hover {
     text-decoration: underline;
 }
 
+/* Icône pour le header sur les petits écrans */
+header .icon {
+    display: none;
+}
+
 main {
     padding: 2rem;
 }
@@ -106,6 +111,11 @@ footer a:hover {
     text-decoration: underline;
 }
 
+/* Icône pour le footer sur les petits écrans */
+footer .icon {
+    display: none;
+}
+
 .content {
     text-align: center;
 }
@@ -160,4 +170,109 @@ footer a:hover {
 
 .button:hover {
     background-color: #555;
+}
+
+/* Icônes du header et footer */
+.icon {
+    display: none;
+}
+
+/* Styles spécifiques pour les écrans petits */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    header h1 {
+        display: none; /* Masquer le texte du header */
+    }
+
+    header .icon {
+        display: inline-block; /* Afficher les icônes pour les petits écrans */
+        font-size: 24px;
+    }
+
+    .hero h2 {
+        font-size: 20px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .exercises h3 {
+        font-size: 18px;
+    }
+
+    .exercises a {
+        font-size: 14px;
+    }
+
+    footer {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    footer .icon {
+        display: inline-block; /* Afficher les icônes pour les petits écrans */
+        font-size: 24px;
+    }
+
+    footer p {
+        display: none; /* Masquer le texte du footer */
+    }
+}
+
+/* Styles pour les tablettes et plus grands */
+@media (min-width: 601px) and (max-width: 1024px) {
+    header h1 {
+        font-size: 22px;
+    }
+
+    .hero h2 {
+        font-size: 22px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    .exercises h3 {
+        font-size: 19px;
+    }
+
+    .exercises a {
+        font-size: 15px;
+    }
+
+    footer {
+        font-size: 15px;
+    }
+}
+
+/* Styles pour les grands écrans */
+@media (min-width: 1025px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    .hero h2 {
+        font-size: 24px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .exercises h3 {
+        font-size: 20px;
+    }
+
+    .exercises a {
+        font-size: 16px;
+    }
+
+    footer {
+        font-size: 16px;
+    }
 }

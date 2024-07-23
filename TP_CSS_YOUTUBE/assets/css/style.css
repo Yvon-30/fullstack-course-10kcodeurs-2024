@@ -152,6 +152,106 @@ textarea {
   top: 100px;
 }
 
+/* Styles pour le bouton de retour à la page d'accueil */
+.back-home {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.back-home a {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.back-home a:hover {
+  background-color: #555;
+}
+/* HEADER */
+header {
+  font-family: Arial, sans-serif;
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo h1 {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  font-size: 1.5rem;
+  text-transform: none;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: normal;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+header nav ul li {
+  margin-left: 1rem;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #007bff;
+  color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.hero h2 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+/* FOOTER */
+footer {
+  font-family: Arial, sans-serif;
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+footer p {
+  margin: 0.5rem 0;
+}
+
+footer a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
 /* RESPONSIVE  */
 @media screen and (max-width: 900px) {
   .grid-container {
