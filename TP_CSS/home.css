@@ -4,26 +4,6 @@
     box-sizing: border-box;
 }
 
-/* Styles spécifiques pour la section hero */
-.hero {
-    text-align: center;
-    background-color: #007bff;
-    color: white;
-    padding: 2rem;
-    border-radius: 8px;
-    margin-bottom: 2rem;
-    text-align: center;
-}
-
-.hero h2 {
-    margin: 0;
-    font-size: 2rem;
-}
-
-.hero p {
-    font-size: 1.2rem;
-}
-
 /* Styles spécifiques pour la section content */
 .content {
     display: flex;
@@ -44,18 +24,9 @@
     margin-bottom: 20px;
 }
 
-/* Styles spécifiques pour le contenu de l'exercice */
-.container {
-    display: flex;
-    gap: 20px; /* Espace entre l'image et le texte */
-    width: 100%;
-    max-width: 100%;
-
-}
-
 figure {
     margin: 0;
-    max-width: 60%;
+    max-width: 1 1 60%;
 }
 
 img {
@@ -71,11 +42,8 @@ figcaption {
 }
 
 .text-container {
-    flex: 40%; /* Les paragraphes prennent 40% de la largeur */
+    flex: 1 1 40%; /* Les paragraphes prennent 40% de l'espace flexible */
     text-align: left; /* Alignement du texte à gauche */
-    display: flex;
-    flex-direction: column;
-    justify-content: top;
 }
 
 .paraph-1,
@@ -154,10 +122,6 @@ table tr {
     border-bottom: 1px solid #000; /* Bordure en bas de chaque ligne */
 }
 
-.highlight {
-    color: red;
-}
-
 /* Style pour le bouton de retour */
 .button {
     padding: 0.7rem 1.5rem;
@@ -168,9 +132,6 @@ table tr {
     text-decoration: none;
     display: inline-block;
     margin-top: 20px; /* Espacement au-dessus du bouton */
-    text-align: center;
-    text-align: center;
-    margin: 20px auto; /* Centrage du bouton avec un espace au-dessus */
 }
 
 .button:hover {
