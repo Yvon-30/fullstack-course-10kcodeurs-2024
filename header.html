@@ -1,12 +1,29 @@
 <header class="bg-dark text-white p-3">
     <div class="container d-flex justify-content-between align-items-center">
-        <h1 class="m-0">Mon Parcours de Formation</h1>
-        <nav>
-            <ul class="nav">
-                <li class="nav-item"><a href="#" class="nav-link text-white"><i class="fas fa-home"></i> Accueil</a></li>
-                <li class="nav-item"><a href="#" class="nav-link text-white"><i class="fas fa-info"></i> À propos</a></li>
-                <li class="nav-item"><a href="#" class="nav-link text-white"><i class="fas fa-envelope"></i> Contact</a></li>
+        <div class="d-flex align-items-center">
+            <i class="fas fa-laptop-code logo me-2"></i>
+            <h1 class="d-none d-md-block m-0">Mon Parcours de Formation</h1>
+        </div>
+        <nav class="d-none d-md-flex">
+            <ul class="navbar-nav ms-auto d-flex flex-row">
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-white"><i class="fas fa-home me-1"></i> Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-white"><i class="fas fa-info me-1"></i> À propos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-white"><i class="fas fa-envelope me-1"></i> Contact</a>
+                </li>
             </ul>
         </nav>
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+        </button>
+        <div class="dropdown-menu dropdown-menu-right bg-dark border-0 d-md-none" aria-labelledby="navbarNav">
+            <a class="dropdown-item text-white" href="#"><i class="fas fa-home me-2"></i>Accueil</a>
+            <a class="dropdown-item text-white" href="#"><i class="fas fa-info me-2"></i>À propos</a>
+            <a class="dropdown-item text-white" href="#"><i class="fas fa-envelope me-2"></i>Contact</a>
+        </div>
     </div>
 </header>
