@@ -21,11 +21,16 @@
 
         <section class="exercises mt-4">
             <h3 class="text-decoration-none text-dark">Mes Exercices</h3>
-            <ul class="list-group">
+            <ul class="list-group" id="exercices-list">
                 <li class="list-group-item"><a href="TP_HTML/login-form.html" class="text-decoration-none">Exercice 1 : Introduction à HTML</a></li>
                 <li class="list-group-item"><a href="TP_CSS/home.html" class="text-decoration-none">Exercice 2 : Styles CSS de base</a></li>
                 <li class="list-group-item"><a href="TP_CSS_YOUTUBE/index.html" class="text-decoration-none">Exercice 3 : Reproduire le TP CSS Youtube</a></li>
             </ul>
+            <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center mt-4" id="pagination">
+                    <!-- Pagination buttons will be inserted here by JavaScript -->
+                </ul>
+            </nav>
         </section>
     </main>
 
@@ -33,5 +38,8 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Script pour la pagination -->
+    <script src="pagination.js" defer></script>
 </body>
 </html>
